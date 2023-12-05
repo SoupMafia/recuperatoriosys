@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Tu Tienda</title>
+</head>
+<body>
+
+    <div class="topnav">
+        <img src="logo.png" class="logo">
+
+        <div class="left-menu">
+            <a href="#">Shop</a>
+            <a href="#">Lifestyle</a>
+            <a href="#">Loyalty</a>
+        </div>
+
+        <div class="right-menu">
+            <div class="profile">
+                <img src="pfp.png" class="profile-pic">
+                <a href="#">Perfil</a>
+            </div>
+
+            <a href="#"><img src="cart.png" class="cart-icon"></a>
+        </div>
+    </div>
+
+    <div class="product-section">
+        <img src="can.png" alt="Producto" class="product-image">
+        <h2>Nombre del Producto</h2>
+        <button id="btnDescripcion">Ver Descripción</button>
+        <button id="btnInfoNutricional">Info Nutricional</button>
+
+
+        <div class="product-info" style="display: none;">
+            <p><strong>Descripción del producto:</strong> Esta es una bebida energética deliciosa y llena de energía.</p>
+            <p><strong>Información Nutricional:</strong> Calorías: 100, Azúcares: 20g, Cafeína: 80mg, ...</p>
+        </div>
+    </div>
+
+    <div class="order-section">
+        <div class="flavor-tab">
+            <label for="flavor">Sabor:</label>
+            <select id="flavor">
+                <option value="mango">Mango</option>
+                <option value="naranja">Naranja</option>
+                <option value="piña">Piña</option>
+                <!-- Agrega más opciones de sabores si es necesario -->
+            </select>
+        </div>
+
+        <div class="size-tab">
+            <label for="size">Tamaño:</label>
+            <select id="size">
+                <option value="320">320ml - $5</option>
+                <option value="500">500ml - $7</option>
+            </select>
+        </div>
+
+        <div class="payment-tab">
+            <label for="payment">Método de Pago:</label>
+            <select id="payment">
+                <option value="tarjeta">Tarjeta de Crédito</option>
+                <option value="PayPal">PayPal</option>
+            </select>
+        </div>
+
+        <button onclick="agregarAlCarrito()">Agregar al Carrito</button>
+    </div>
+
+    <div class="cart-section">
+        <h2>Carrito de Compras</h2>
+        <ul id="cartItems"></ul>
+        <p>Total: $<span id="total">0</span></p>
+    </div>
+</body>
+</html>

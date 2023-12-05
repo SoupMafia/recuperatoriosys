@@ -1,0 +1,155 @@
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom, #00c6fb 0%, #005bea 100%); 
+  }
+  .topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .logo {
+    width: 50px; 
+  }
+  
+  .left-menu, 
+  .right-menu {
+    display: flex;
+    align-items: center;  
+  }
+  
+  /* Resto de estilos */
+  .topnav a {
+    text-decoration: none;
+    margin-right: 10px;  
+    padding: 8px 12px;
+    border-radius: 4px;  
+  }
+  
+  .left-menu a {
+    border: 1px solid #aaa;
+  }
+  
+  .right-menu a {
+    background: #f2f2f2; 
+  }
+  
+  .left-menu a:hover {
+    border-color: #666;
+  }
+  
+  .right-menu a:hover {
+     background: #e2e2e2;
+  }
+  /* Nuevos estilos para .profile */
+
+.profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-pic {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 5px; 
+  }
+  /* Nuevos estilos para el carrito */
+
+.cart-icon {
+    width: 25px;
+    height: 25px;  
+  }
+  
+  .right-menu a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;  
+  }
+  
+  .right-menu a:hover {
+    background: #e2e2e2;
+  }
+  /* Resto de estilos ... */
+
+.product-section {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .product-image {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+  
+  .product-section h2 {
+    color: #fff;
+  }
+  
+  .product-section button {
+    margin: 5px;
+    padding: 8px 12px;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .product-section button:hover {
+    background-color: #e2e2e2;
+  }
+/* Resto de estilos ... */
+
+.order-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-section select {
+    margin-right: 10px;
+}
+
+.order-section button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.order-section button:hover {
+    background-color: #45a049;
+}
+/* Resto de estilos ... */
+
+.cart-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-section h2 {
+    margin-bottom: 10px;
+}
+
+.cart-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart-section li {
+    margin-bottom: 10px;
+}
+  
